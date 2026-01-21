@@ -95,7 +95,7 @@
 
     // Close if click outside
     document.addEventListener("click", (e) => {
-      if (e.target.closest(".header__inner")) return;
+      if (e.target.closest(".headeif (e.target.closest(".header")) return;
       nav.classList.remove("is-open");
       menuBtn.setAttribute("aria-expanded", "false");
     });
