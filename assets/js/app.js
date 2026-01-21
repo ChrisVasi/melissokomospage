@@ -37,8 +37,17 @@
     titleEl.textContent = item.title;
     if (descEl) descEl.textContent = item.desc || "";
     if (priceEl) priceEl.textContent = item.price || "—";
-    if (ctaEl) ctaEl.textContent = item.cta || "Επικοινωνία";
-  }
+    if (ctaEl && window.CONTENT.contact && window.CONTENT.contact.whatsapp) {
+  const phone = window.CONTENT.contact.whatsapp;
+  const message = encodeURIComponent(
+    `Θέλω πληροφορίες για το προϊόν: ${item.title}`
+  );
+  ctaEl.textContent = item.cta || "Παραγγελία στο WhatsApp";
+  ctaEl.href = `https://wa.me/${phone}?text=${message}`;
+  ctaEl.target = "_blank";
+  ctaEl.rel = "noopener";
+}
+
 
   function esc(s){
     return String(s)
