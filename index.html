@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Μελισσοκόμος Κρήτης | Αγνό Μέλι</title>
+  <meta name="description" content="Αγνό κρητικό μέλι απευθείας από τον παραγωγό." />
+
+  <link rel="stylesheet" href="./assets/css/global.css?v=1" />
+  <script src="./assets/js/content.js?v=1"></script>
+  <script src="./assets/js/app.js?v=1" defer></script>
+</head>
+
+<body class="site">
+  <a class="skip-link" href="#main">Μετάβαση στο κύριο περιεχόμενο</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="./" aria-label="Αρχική σελίδα">
+        <span class="brand__name">Μελισσοκόμος Κρήτης</span>
+      </a>
+
+      <nav class="nav" aria-label="Κύρια πλοήγηση">
+        <a class="nav__link" href="#products">Προϊόντα</a>
+        <a class="nav__link" href="#about">Σχετικά</a>
+        <a class="nav__link" href="#process">Διαδικασία</a>
+        <a class="nav__link" href="#faq">Συχνές ερωτήσεις</a>
+        <a class="nav__link nav__cta" href="#contact">Επικοινωνία</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 id="hero-title">Αγνό κρητικό μέλι, απευθείας από τον παραγωωγό</h1>
+          <p class="hero__lead">Μικρή παραγωγή, καθαρή γεύση, πλήρης διαφάνεια. Ρώτησε για διαθέσιμες ποικιλίες και αποστολές.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#products">Δες προϊόντα</a>
+            <a class="btn btn--secondary" href="#contact">Κάνε παραγγελία</a>
+          </div>
+
+          <ul class="hero__badges" aria-label="Σύντομα σημεία">
+            <li>Μικρή παραγωγή</li>
+            <li>Κρήτη</li>
+            <li>Αποστολές πανελλαδικά</li>
+          </ul>
+        </div>
+
+        <div class="hero__media">
+          <img src="./assets/img/honey-hero.jpg" alt="" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section" aria-labelledby="products-title">
+      <div class="container">
+        <h2 id="products-title">Προϊόντα</h2>
+        <div class="grid" role="list" data-products-grid></div>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">Σχετικά</h2>
+        <p>Παραγωγός μελιού στην Κρήτη με σεβασμό στη μέλισσα και το περιβάλλον. Μικρή παραγωγή με στόχο την ποιότητα και τη συνέπεια.</p>
+      </div>
+    </section>
+
+    <section id="process" class="section" aria-labelledby="process-title">
+      <div class="container">
+        <h2 id="process-title">Διαδικασία</h2>
+        <ol class="steps">
+          <li><strong>Τοποθεσίες</strong> με καθαρή ανθοφορία.</li>
+          <li><strong>Τρύγος</strong> στην κατάλληλη στιγμή.</li>
+          <li><strong>Συσκευασία</strong> με προσοχή και ιχνηλασιμότητα.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="faq" class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title">Συχνές ερωτήσεις</h2>
+        <div class="faq">
+          <details>
+            <summary>Ζαχαρώνει το μέλι;</summary>
+            <p>Ναι, είναι φυσιολογικό φαινόμενο.</p>
+          </details>
+          <details>
+            <summary>Στέλνετε πανελλαδικά;</summary>
+            <p>Ναι, κατόπιν συνεννόησης.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Επικοινωνία</h2>
+        <form class="form" action="#" method="post" aria-describedby="contact-note">
+          <p id="contact-note" class="note">Γράψε ποικιλία, ποσότητα και περιοχή αποστολής.</p>
+
+          <div class="field">
+            <label for="name">Ονοματεπώνυμο</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="field">
+            <label for="phone">Τηλέφωνο</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" />
+          </div>
+
+          <div class="field">
+            <label for="message">Μήνυμα</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button class="btn btn--primary" type="submit">Αποστολή</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Μελισσοκόμος Κρήτης</p>
+      <nav aria-label="Πλοήγηση υποσέλιδου">
+        <a href="#main">Πάνω</a>
+        <a href="#contact">Επικοινωνία</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
