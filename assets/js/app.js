@@ -75,6 +75,31 @@
       ctaEl.rel = "noopener";
     }
   }
+  // Mobile menu toggle
+  const menuBtn = document.querySelector(".menu-btn");
+  const nav = document.getElementById("site-nav");
+
+  if (menuBtn && nav) {
+    menuBtn.addEventListener("click", () => {
+      const open = nav.classList.toggle("is-open");
+      menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+
+    // Close on link click (mobile)
+    nav.addEventListener("click", (e) => {
+      const a = e.target.closest("a");
+      if (!a) return;
+      nav.classList.remove("is-open");
+      menuBtn.setAttribute("aria-expanded", "false");
+    });
+
+    // Close if click outside
+    document.addEventListener("click", (e) => {
+      if (e.target.closest(".header__inner")) return;
+      nav.classList.remove("is-open");
+      menuBtn.setAttribute("aria-expanded", "false");
+    });
+  }
 
   // Escape HTML
   function esc(s) {

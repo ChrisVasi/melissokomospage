@@ -14,21 +14,29 @@
 <body class="site">
   <a class="skip-link" href="#main">Μετάβαση στο κύριο περιεχόμενο</a>
 
-  <header class="header">
-    <div class="container header__inner">
-      <a class="brand" href="./" aria-label="Αρχική σελίδα">
-        <span class="brand__name">Μελισσοκόμος Κρήτης</span>
-      </a>
+ <header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="./" aria-label="Αρχική σελίδα">
+      <span class="brand__name">Μελισσοκόμος Κρήτης</span>
+    </a>
 
-      <nav class="nav" aria-label="Κύρια πλοήγηση">
-        <a class="nav__link" href="#products">Προϊόντα</a>
-        <a class="nav__link" href="#about">Σχετικά</a>
-        <a class="nav__link" href="#process">Διαδικασία</a>
-        <a class="nav__link" href="#faq">Συχνές ερωτήσεις</a>
-        <a class="nav__link nav__cta" href="#contact">Επικοινωνία</a>
-      </nav>
-    </div>
-  </header>
+    <button class="menu-btn" type="button"
+      aria-controls="site-nav"
+      aria-expanded="false"
+      aria-label="Άνοιγμα μενού">
+      ☰ <span class="menu-btn__text">Μενού</span>
+    </button>
+
+    <nav id="site-nav" class="nav" aria-label="Κύρια πλοήγηση">
+      <a class="nav__link" href="#products">Προϊόντα</a>
+      <a class="nav__link" href="#about">Σχετικά</a>
+      <a class="nav__link" href="#process">Διαδικασία</a>
+      <a class="nav__link" href="#faq">Συχνές ερωτήσεις</a>
+      <a class="nav__link nav__cta" href="#contact">Επικοινωνία</a>
+    </nav>
+  </div>
+</header>
+
 
   <main id="main" class="main" tabindex="-1">
     <section class="hero" aria-labelledby="hero-title">
